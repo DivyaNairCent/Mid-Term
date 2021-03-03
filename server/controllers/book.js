@@ -20,10 +20,12 @@ module.exports.displayBookList = (req, res, next) => {
     });
 }
 
+// display add page
 module.exports.displayAddPage = (req, res, next) => {
     res.render('book/add', {title: 'Add Book'})          
 }
 
+//process add page
 module.exports.processAddPage = (req, res, next) => {
     let newBook = Book({
         "name": req.body.name,
@@ -48,6 +50,7 @@ module.exports.processAddPage = (req, res, next) => {
 
 }
 
+//display edit page
 module.exports.displayEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -65,6 +68,7 @@ module.exports.displayEditPage = (req, res, next) => {
     }); 
 }
 
+//process edit page
 module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -92,6 +96,7 @@ module.exports.processEditPage = (req, res, next) => {
     });
 }
 
+//perform delete
 module.exports.performDelete =  (req, res, next) => {
     let id = req.params.id;
 
