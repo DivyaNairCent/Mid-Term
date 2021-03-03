@@ -1,9 +1,13 @@
 {
-  "name": "week-4",
-  "version": "0.0.0",
+  "name": "midterm",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engine": {
+    "node": "^12.00.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
@@ -17,5 +21,18 @@
     "mongoose": "^5.10.2",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "Midterm Project",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DivyaNairCent/Mid-Term.git"
+  },
+  "author": "Divya Nair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DivyaNairCent/Mid-Term/issues"
+  },
+  "homepage": "https://github.com/DivyaNairCent/Mid-Term#readme"
 }
